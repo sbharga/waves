@@ -22,7 +22,11 @@ export function CoolorsModal({
         <button className="modal-close" type="button" onClick={onClose} aria-label="Close Coolors import">
           <X size={18} />
         </button>
-        <img className="modal-logo" src="/coolors-logo.svg" alt="Coolors" />
+        <img
+          className="modal-logo"
+          src={`${import.meta.env.BASE_URL}coolors-logo.svg`}
+          alt="Coolors"
+        />
         <h2 id="coolors-modal-title">Import a palette</h2>
         <p>Paste a Coolors palette link containing one or more colors.</p>
         <form className="coolors-form" onSubmit={onSubmit}>

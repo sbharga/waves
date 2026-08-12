@@ -22,6 +22,15 @@ npm run build
 
 To inspect the production build locally, run `npm run preview` after building.
 
+## GitHub Pages
+
+The production build uses `/waves/` as its base path and is deployed by the
+GitHub Actions workflow in `.github/workflows/deploy-pages.yml`.
+
+In the repository's **Settings → Pages**, set **Source** to **GitHub Actions**.
+Pushes to `main` then build and publish the site automatically. The deployed
+site is available at <https://sbharga.github.io/waves/>.
+
 ## Shortcuts
 
 - `N` — generate a new seed
